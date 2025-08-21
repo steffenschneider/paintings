@@ -22,19 +22,32 @@
       
       .gallery {
         display: flex;
-        flex-direction: column;  /* alles untereinander */
-        align-items: center;     /* zentriert */
-        gap: 70px;               /* einheitlicher Abstand zwischen den Bildern */
+        flex-direction: column;
+        align-items: center;
+        gap: 60px; /* gleichmäßiger Abstand */
         padding: 20px 0;
       }
       
+      .gallery figure {
+        max-width: 700px;
+        margin: 0;
+        text-align: center;
+      }
+      
       .gallery img {
-        max-width: 90%;
-        width: 650px;
+        max-width: 100%;
         height: auto;
-        border: 4px solid #ccc;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        border: 4px solid #eee;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      }
+      
+      .gallery figcaption {
+        margin-top: 8px;
+        font-size: 0.9em;
+        font-style: italic;
+        color: #666;
+        letter-spacing: 0.3px;
       }
 
       .note {
@@ -64,16 +77,52 @@
     </div>
 
     <div class="gallery">
-      <img src="paintings/20240918 ++ Schöpfebach.png" alt="Schöpfebach">
-      <img src="paintings/20240926 ++ Günnenbach.png" alt="pleinair Günnenbach">
-      <img src="paintings/20250524 ++ Pleinair Wallbach mit Kühen.png" alt="Pleinair Wallbach mit Kühen">
-      <img src="paintings/20250529 ++ Badmattenpark.jpeg" alt="Badmattenpark">
-      <img src="paintings/20250619 ++ Sumpf 2.png" alt="Sumpf mit lila Hintergrund">
-      <img src="paintings/20250622 + Küste.jpeg" alt="Küsteh">
-      <img src="paintings/20250820 Springbrunnen.png" alt="Springbrunnen im Park">
-      <img src="paintings/20250821 ++ Canyon mit blauem Fels.jpeg" alt="Canyon mit blauem Fels">
-      <img src="paintings/clouds.png" alt="Ölbild mit buntem Busch">
+      <figure>
+        <img src="paintings/20240918 ++ Schöpfebach.png" alt="Schöpfebach">
+        <figcaption>Schöpfebach, Öl auf Malplatte, 2024</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/20240926 ++ Günnenbach.png" alt="pleinair Günnenbach">
+        <figcaption>Pleinair Günnenbach, Öl auf Malplatte, 2024</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/20250524 ++ Pleinair Wallbach mit Kühen.png" alt="Pleinair Wallbach mit Kühen">
+        <figcaption>Pleinair Wallbach mit Kühen, Öl auf Malplatte, 2025</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/20250529 ++ Badmattenpark.jpeg" alt="Badmattenpark">
+        <figcaption>Badmattenpark, Öl auf Malplatte, 2025</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/20250619 ++ Sumpf 2.png" alt="Sumpf mit lila Hintergrund">
+        <figcaption>Sumpf mit lila Hintergrund, Öl auf Leinwand, 2025</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/20250622 + Küste.jpeg" alt="Küste">
+        <figcaption>Küste, Öl auf Malplatte, 2025</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/20250820 Springbrunnen.png" alt="Springbrunnen im Park">
+        <figcaption>Springbrunnen im Park, Öl auf Malplatte, 2025</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/20250821 ++ Canyon mit blauem Fels.jpeg" alt="Canyon mit blauem Fels">
+        <figcaption>Canyon mit blauem Fels, Öl auf Malplatte, 2025</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="paintings/clouds.png" alt="Ölbild mit buntem Busch">
+        <figcaption>Clouds, Öl auf Malplatte, 2025</figcaption>
+      </figure>
     </div>
+
     
     <p class="note">Viele Bilder sind käuflich erwerbbar. Bei Interesse einfach Kontakt aufnehmen.<br>Instagram: @steffenschneider123</p>
 
